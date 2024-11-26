@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturant-Sample-Website</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="container navbarContent">
+        <div class="logo">Olba</div>
+        <div class="navEle">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- HERO -->
+      <section class="hero centerContent">
+        <h2 class="mainHeading">Welcome to Olba</h2>
+        <h3 class="subHeading">
+          Experience the Essence of Mediterranean Cuisine by the Sea
+        </h3>
+        <p class="content">
+          Nestled along the Freetown Penisulla, Olba Restaurant offers a
+          culinary journey like no other. Dive into a world of vibrant flavors,
+          fresh ingredients, and traditional Lebanese dishes. Whether you're
+          here for a casual meal or a special occasion, our oceanfront setting
+          provides the perfect backdrop for an unforgettable dining experience.
+        </p>
+        <a href="about.html" class="btn">Find Out More</a>
+      </section>
+
+      <!-- ABOUT US -->
+      <section class="aboutUs">
+        <div class="image centerContent">
+          <img src="./images/waiter.jpg" alt="waiter" />
+        </div>
+        <div class="indexAbout centerContent">
+          <h2 class="mainHeading">About Us</h2>
+          <p class="content">
+            Welcome to Olba Restaurant, where we bring the vibrant flavors of
+            Mediterranean cuisine to the scenic Peninsula. With a focus on fresh
+            ingredients and expertly crafted dishes, we offer a unique dining
+            experience in a warm and inviting atmosphere. Join us for a
+            memorable meal by the sea, where exceptional service and stunning
+            views make every visit special
+          </p>
+        </div>
+      </section>
+
+      <!-- TOP 3 DISHES -->
+      <section class="topDishes">
+        <h2 class="mainHeading">Top 3 Dishes</h2>
+        <div class="dishes">
+          <!-- DISH1 -->
+          <div class="dishesItem">
+            <div class="dishImage centerContent">
+              <img src="./images/dish.jpg" alt="dish1" />
+            </div>
+            <h3 class="subHeading">Dish1</h3>
+            <p class="content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Cupiditate ex veniam reprehenderit molestias dicta sunt, quibusdam
+              minus? Vel, accusamus impedit? Blanditiis nisi aut eos pariatur
+              saepe, aliquam incidunt fugit! Tempora.
+            </p>
+          </div>
+
+          <!-- DISH2 -->
+          <div class="dishesItem centerContent">
+            <div class="dishImage centerContent">
+              <img src="./images/dish1.jpg" alt="dish2" />
+            </div>
+            <h3 class="subHeading">Dish2</h3>
+            <p class="content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Cupiditate ex veniam reprehenderit molestias dicta sunt, quibusdam
+              minus? Vel, accusamus impedit? Blanditiis nisi aut eos pariatur
+              saepe, aliquam incidunt fugit! Tempora.
+            </p>
+          </div>
+
+          <!-- DISH3 -->
+          <div class="dishesItem">
+            <div class="dishImage centerContent">
+              <img src="./images/dish2.jpg" alt="dish3" />
+            </div>
+            <h3 class="subHeading">Dish3</h3>
+            <p class="content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Cupiditate ex veniam reprehenderit molestias dicta sunt, quibusdam
+              minus? Vel, accusamus impedit? Blanditiis nisi aut eos pariatur
+              saepe, aliquam incidunt fugit! Tempora.
+            </p>
+          </div>
+
+          <a href="menu.html" class="btn">View Our Menu</a>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US 1 -->
+      <section class="WCU1">
+        <div class="image centerContent">
+          <img src="./images/WCU1.jpg" alt="Bunch of delicious food" />
+        </div>
+        <div class="centerContent">
+          <h2 class="mainHeading">Unmatched Culinary Excellence</h2>
+          <p class="content">
+            At Olba Restaurant, our talented chefs use the freshest ingredients
+            to create exquisite Mediterranean dishes. Our culinary team brings
+            years of expertise and creativity to every plate, ensuring that each
+            meal is a work of art that delights your taste buds.
+          </p>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US 2 -->
+      <section class="WCU2">
+        <div class="centerContent">
+          <h2 class="mainHeading">Breathtaking Location</h2>
+          <p class="content">
+            Nestled along the scenic Peninsula, our restaurant provides stunning
+            views and a relaxing ambiance, making every meal unforgettable.
+            Whether you're dining with family, friends, or for a special
+            occasion, our beautiful setting enhances the dining experience and
+            creates lasting memories.
+          </p>
+        </div>
+        <div class="image centerContent">
+          <img src="./images/WCU2.jpg" alt="senery" />
+        </div>
+      </section>
+
+      <!-- CONTACT FORM -->
+      <section>
+        <h2 class="mainHeading">Contact Us</h2>
+        <form action="your-backend-endpoint" method="post" class="contactform">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="additional-name"
+            placeholder="Fullname"
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="Email Address"
+            required
+          />
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container footerContainer">
+          <div class="footerAbout">
+            <h3 class="subHeading">Olba</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Similique fugiat dolorum porro commodi ea. Quo corrupti aut nulla,
+              quaerat odit officia dicta praesentium alias.
+            </p>
+          </div>
+          <div class="legalLinks centerContent">
+            <h3 class="subHeading">Quick Links</h3>
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa fa-chevron-right"></i> Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-chevron-right"></i> Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href=""><i class="fa fa-chevron-right"></i> Contact Us</a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-chevron-right"></i> Menu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container social">
+          <p>Follow us:</p>
+          <ul>
+            <li>
+              <a href=""><i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-tiktok"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">&copy; Olba 2024. All Rights Reserved.</div>
+      </footer>
+    </main>
+  </body>
+</html>
